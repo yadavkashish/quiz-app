@@ -1,0 +1,55 @@
+@keyframes sparkle {
+    0% {
+      transform: translateY(-10vh) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) scale(1.5);
+      opacity: 1;
+    }
+  }
+  
+  .sparkle-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .sparkle-animation::before,
+  .sparkle-animation::after {
+    content: "";
+    position: absolute;
+    width: 8px; /* Increased size */
+    height: 8px;
+    border-radius: 50%; /* Makes them round */
+    background-color: white;
+    box-shadow: 
+      /* Left side */
+      5vw 10vh #FFF5E1, 8vw 15vh #FFF5E1, 12vw 20vh white,
+      10vw 30vh white, 14vw 40vh #FFF5E1, 18vw 50vh white,
+      20vw 60vh #FFF5E1, 5vw 70vh white, 10vw 80vh #FFF5E1,
+      15vw 90vh white, 12vw 95vh #FFF5E1, 7vw 50vh white,
+  
+      /* Center */
+      30vw 10vh white, 32vw 15vh #FFF5E1, 35vw 25vh white,
+      40vw 35vh #FFF5E1, 45vw 45vh white, 38vw 50vh #FFF5E1,
+      42vw 60vh white, 48vw 75vh #FFF5E1, 36vw 85vh white,
+  
+      /* Right side */
+      65vw 10vh #FFF5E1, 70vw 15vh white, 75vw 20vh #FFF5E1,
+      80vw 30vh white, 85vw 40vh #FFF5E1, 90vw 50vh white,
+      95vw 60vh #FFF5E1, 85vw 75vh white, 90vw 85vh #FFF5E1,
+      95vw 95vh white;
+  
+    animation: sparkle 5s linear infinite;
+    opacity: 0.9; /* Makes them more visible */
+  }
+  
+  .sparkle-animation::after {
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  
+  
+  
