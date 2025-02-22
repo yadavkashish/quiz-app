@@ -34,7 +34,7 @@ The **Interactive Quiz Platform** is a web-based application that allows users t
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/yadavkashish/quiz-app.git
-   cd quiz-platform
+   cd quiz-app
    ```
 
 2. **Install Dependencies**
@@ -50,7 +50,7 @@ The **Interactive Quiz Platform** is a web-based application that allows users t
 4. **Open in Browser**
    The app will be available at:
    ```
-   http://localhost:5173
+  (https://playquizwithus.netlify.app/)
    ```
 
 ## **Deployed Link**
